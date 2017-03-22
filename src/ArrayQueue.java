@@ -1,5 +1,9 @@
 // my implementation of the queue data structure.
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Random;
+
 public class ArrayQueue<E> {
     private E[] queue;
     private int size;
@@ -106,6 +110,35 @@ public class ArrayQueue<E> {
                 temp[i] = this.queue[i];
             }
             this.queue = temp;
+        }
+    }
+
+    public void shuffle() {
+        Set<Integer> set = new HashSet<Integer>();
+        Random r = new Random();
+        E[] temp = (E[]) new Object[this.size];
+        int num = r.nextInt(this.size);
+        int index = 0;
+        while (set.size() != this.size) {
+            if (!set.contains(num)) {
+                set.add(num);
+                temp[index] = this.queue[num];
+                index++;
+            }
+            num = r.nextInt(this.size);
+            if (set.size() == this.size - 1) {
+                for (int i = 0; i < this.size; i++) {
+                    if (!set.contains(i)) {
+                        temp[index] = this.queue[i];
+                        set.add(i);
+                        break;
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < this.size; i++) {
+            E add = temp[i];
+            this.queue[i] = add;
         }
     }
 }
