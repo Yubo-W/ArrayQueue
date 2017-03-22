@@ -88,6 +88,9 @@ public class ArrayQueue<E> {
     public void enqueue(E[] input) {
         E[] temp = (E[]) new Object[input.length];
         for (int i = 0; i < input.length; i++) {
+            if (input[i] == null) {
+                throw new IllegalArgumentException();
+            }
             E add = input[i];
             temp[i] = add;
         }
