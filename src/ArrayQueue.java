@@ -1,4 +1,5 @@
-// my implementation of the queue data structure.
+// This is another implementation of the traditional Queue. This implementation of the
+// Queue is done using an array.
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +12,7 @@ public class ArrayQueue<E> {
     // constructs a new ArrayQueue object.
     public ArrayQueue() {
         this.queue = (E[]) new Object[10];
-        this.size = 10;
+        this.size = 0;
     }
 
     // constructs a new ArrayQueue object with the elements given in the parameter.
@@ -232,6 +233,13 @@ public class ArrayQueue<E> {
     private void shift(int index) {
         for (int i = index; i < this.size - 1; i++) {
             this.queue[i] = this.queue[i + 1];
+        }
+    }
+
+    public void reverse() {
+        E[] temp = (E[]) new Object[this.size];
+        for (int i = this.size - 1; i >= 0; i--) {
+            temp[(this.size - 1) - i] = this.queue[i];
         }
     }
 }
