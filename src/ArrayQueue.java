@@ -49,6 +49,19 @@ public class ArrayQueue<E> {
         return returned;
     }
 
+    public String toString() {
+        String result = "[";
+        if (this.isEmpty()) {
+            result += "]";
+            return result;
+        }
+        for (int i = 0; i < this.size - 1; i++) {
+            result += this.queue[i] + ", ";
+        }
+        result += this.queue[this.size] + "]";
+        return result;
+    }
+
     // retrieves the element at a certain index and returns it.
     // throws IndexOutOfBoundsException() if index is larger than the ArrayQueue.
     public E get(int index) {
