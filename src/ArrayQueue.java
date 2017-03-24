@@ -49,6 +49,7 @@ public class ArrayQueue<E> {
         return returned;
     }
 
+    // returns the ArrayQueue object as a String representation.
     public String toString() {
         String result = "[";
         if (this.isEmpty()) {
