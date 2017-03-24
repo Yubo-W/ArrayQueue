@@ -195,4 +195,43 @@ public class ArrayQueue<E> {
             this.queue[i] = add;
         }
     }
+
+    // returns whether or not the ArrayQueue has no duplicate elements.
+    public boolean isUnique() {
+        if (this.size < 2) {
+            return true;
+        }
+        Set<E> set = new HashSet<E>();
+        for (E element : this.queue) {
+            if (set.contains(element)) {
+                return false;
+            } else {
+                set.add(element);
+            }
+        }
+        return true;
+    }
+
+    // removes duplicate elements from the ArrayQueue object.
+    public void removeDuplicates() {
+        if (this.size > 1) {
+            Set<E> set = new HashSet<E>();
+            int iterations = this.size;
+            for (int i = 0; i < iterations; i++) {
+                if (!set.contains(this.queue[i])) {
+                    set.add(this.queue[i]);
+                } else {
+                    shift(i);
+                    this.size--;
+                }
+            }
+        }
+    }
+
+    // shifts all of the elements from the ArrayQueue over starting from a certain index.
+    private void shift(int index) {
+        for (int i = index; i < this.size - 1; i++) {
+            this.queue[i] = this.queue[i + 1];
+        }
+    }
 }
