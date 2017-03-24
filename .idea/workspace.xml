@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a07c95-c31f-4e87-8b80-6589c12ef39c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayQueue.java" afterPath="$PROJECT_DIR$/src/ArrayQueue.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,10 +21,10 @@
       <file leaf-file-name="ArrayQueue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="243" column="5" lean-forward="false" selection-start-line="243" selection-start-column="5" selection-end-line="243" selection-end-column="5" />
+            <state relative-caret-position="744">
+              <caret line="238" column="60" lean-forward="false" selection-start-line="238" selection-start-column="60" selection-end-line="238" selection-end-column="60" />
               <folding>
-                <element signature="e#0#7695#0" expanded="true" />
+                <element signature="e#0#7756#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -392,7 +391,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7695#0" expanded="true" />
+            <element signature="e#0#7756#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -403,7 +402,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7695#0" expanded="true" />
+            <element signature="e#0#7756#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -414,7 +413,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7695#0" expanded="true" />
+            <element signature="e#0#7756#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -425,7 +424,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7695#0" expanded="true" />
+            <element signature="e#0#7756#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -433,10 +432,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="243" column="5" lean-forward="false" selection-start-line="243" selection-start-column="5" selection-end-line="243" selection-end-column="5" />
+        <state relative-caret-position="744">
+          <caret line="238" column="60" lean-forward="false" selection-start-line="238" selection-start-column="60" selection-end-line="238" selection-end-column="60" />
           <folding>
-            <element signature="e#0#7695#0" expanded="true" />
+            <element signature="e#0#7756#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

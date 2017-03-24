@@ -236,6 +236,7 @@ public class ArrayQueue<E> {
         }
     }
 
+    // reverses the order of the elements in the ArrayQueue.
     public void reverse() {
         E[] temp = (E[]) new Object[this.size];
         for (int i = this.size - 1; i >= 0; i--) {
