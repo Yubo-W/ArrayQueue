@@ -243,4 +243,20 @@ public class ArrayQueue<E> {
             temp[(this.size - 1) - i] = this.queue[i];
         }
     }
+
+    public void rotate(int times) {
+        if (times != 0) {
+            for (int i = 0; i < times; i++) {
+                E temp = this.queue[0];
+                for (int j = 0; j < this.size; i++) {
+                    if (j == this.size - 1) {
+                        this.queue[0] = temp;
+                    } else {
+                        temp = this.queue[j + 1];
+                        this.queue[j + 1] = this.queue[j];
+                    }
+                }
+            }
+        }
+    }
 }
