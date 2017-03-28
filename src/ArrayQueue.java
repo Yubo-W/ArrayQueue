@@ -244,11 +244,20 @@ public class ArrayQueue<E> {
         }
     }
 
+    // start: [2, 5, 1, 6, 7]
+    //          [2, 2, 1, 6, 7]
+    // temp = 5
+    //
+    // end: [7, 2, 5, 1, 6]
+
     public void rotate(int times) {
-        if (times != 0) {
+        if (this.isEmpty()) {
+            throw new IllegalArgumentException();
+        }
+        if (times != 0 && this.size > 1) {
             for (int i = 0; i < times; i++) {
-                E temp = this.queue[0];
-                for (int j = 0; j < this.size; i++) {
+                E temp = this.queue[1];
+                for (int j = 1; j < this.size; i++) {
                     if (j == this.size - 1) {
                         this.queue[0] = temp;
                     } else {

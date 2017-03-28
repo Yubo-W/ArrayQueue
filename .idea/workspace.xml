@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a07c95-c31f-4e87-8b80-6589c12ef39c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayQueue.java" afterPath="$PROJECT_DIR$/src/ArrayQueue.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,10 +21,10 @@
       <file leaf-file-name="ArrayQueue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="254" column="48" lean-forward="false" selection-start-line="254" selection-start-column="48" selection-end-line="254" selection-end-column="48" />
+            <state relative-caret-position="669">
+              <caret line="258" column="39" lean-forward="true" selection-start-line="258" selection-start-column="39" selection-end-line="258" selection-end-column="39" />
               <folding>
-                <element signature="e#0#8259#0" expanded="true" />
+                <element signature="e#0#8480#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#5485#5494#0" expanded="true" />
               </folding>
@@ -393,7 +392,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
@@ -405,7 +404,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
@@ -417,7 +416,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
@@ -429,7 +428,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
@@ -441,7 +440,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
@@ -453,7 +452,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
@@ -462,10 +461,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="254" column="48" lean-forward="false" selection-start-line="254" selection-start-column="48" selection-end-line="254" selection-end-column="48" />
+        <state relative-caret-position="669">
+          <caret line="258" column="39" lean-forward="true" selection-start-line="258" selection-start-column="39" selection-end-line="258" selection-end-column="39" />
           <folding>
-            <element signature="e#0#8259#0" expanded="true" />
+            <element signature="e#0#8480#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#5485#5494#0" expanded="true" />
           </folding>
