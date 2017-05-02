@@ -8,11 +8,13 @@ import java.util.Random;
 public class ArrayQueue<E> {
     private E[] queue;
     private int size;
+    private Random r;
 
     // constructs a new ArrayQueue object.
     public ArrayQueue() {
         this.queue = (E[]) new Object[10];
         this.size = 0;
+        this.r = new Random();
     }
 
     // constructs a new ArrayQueue object with the elements given in the parameter.
@@ -170,9 +172,8 @@ public class ArrayQueue<E> {
     // put the elements of the ArrayQueue into a random order.
     public void shuffle() {
         Set<Integer> set = new HashSet<Integer>();
-        Random r = new Random();
         E[] temp = (E[]) new Object[this.size];
-        int num = r.nextInt(this.size);
+        int num = this.r.nextInt(this.size);
         int index = 0;
         while (set.size() != this.size) {
             if (!set.contains(num)) {
@@ -180,7 +181,7 @@ public class ArrayQueue<E> {
                 temp[index] = this.queue[num];
                 index++;
             }
-            num = r.nextInt(this.size);
+            num = this.r.nextInt(this.size);
             if (set.size() == this.size - 1) {
                 for (int i = 0; i < this.size; i++) {
                     if (!set.contains(i)) {
@@ -236,36 +237,21 @@ public class ArrayQueue<E> {
         }
     }
 
+    // returns a random element that is within the ArrayQueue object.
+    public E randomPick() {
+        E[] tempArray = (E[]) new Object[this.size];
+        for (int i = 0; i < this.size; i++) {
+            tempArray[i] = this.queue[i];
+        }
+        int index = this.r.nextInt(this.size) - 1;
+        return tempArray[index];
+    }
+
     // reverses the order of the elements in the ArrayQueue.
     public void reverse() {
         E[] temp = (E[]) new Object[this.size];
         for (int i = this.size - 1; i >= 0; i--) {
             temp[(this.size - 1) - i] = this.queue[i];
-        }
-    }
-
-    // start: [2, 5, 1, 6, 7]
-    //          [2, 2, 1, 6, 7]
-    // temp = 5
-    //
-    // end: [7, 2, 5, 1, 6]
-
-    public void rotate(int times) {
-        if (this.isEmpty()) {
-            throw new IllegalArgumentException();
-        }
-        if (times != 0 && this.size > 1) {
-            for (int i = 0; i < times; i++) {
-                E temp = this.queue[1];
-                for (int j = 1; j < this.size; i++) {
-                    if (j == this.size - 1) {
-                        this.queue[0] = temp;
-                    } else {
-                        temp = this.queue[j + 1];
-                        this.queue[j + 1] = this.queue[j];
-                    }
-                }
-            }
         }
     }
 }
