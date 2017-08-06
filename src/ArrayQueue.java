@@ -254,4 +254,14 @@ public class ArrayQueue<E> {
             temp[(this.size - 1) - i] = this.queue[i];
         }
     }
+
+    public E[] copy() {
+        E[] temp = (E[]) new Object[this.size];
+        int index = 0;
+        for (E item: this.queue) {
+            temp[index] = item;
+            index++;
+        }
+        return temp;
+    }
 }
